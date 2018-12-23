@@ -4,4 +4,4 @@ Disallow: /*.png$
 Disallow: /*.gif$
 Disallow: /images/
 Allow: /
-Sitemap: https://manaimohamedselim.000webhostapp.com/sitemap.xml
+Sitemap: http://manaimohamedselim.me/sitemap.xml

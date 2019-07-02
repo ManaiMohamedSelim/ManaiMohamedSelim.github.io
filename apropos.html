@@ -9,7 +9,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
-        <!-- title -->
         
         <!-- stylesheet -->
         <link rel="stylesheet" href="css/fontawesome-all.min.css" />
@@ -18,6 +17,12 @@
         <link rel="stylesheet" href="css/responsive.css" />
         <link rel="stylesheet" href="css/light_template.html" />
         <link rel="stylesheet" href="css/colors/default-color.css" />
+		<script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/typed.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom.js"></script>
         
         <!-- Plugins -->
         <link rel="stylesheet" href="css/magnific-popup.css" />
@@ -55,7 +60,6 @@
 </script>
 
 		
-
     </head>
     <body>
         
@@ -83,7 +87,7 @@
                                 <span class="name-menu">Accueil</span>
                             </a>
                         </li>
-                        <li id="about" class="nav-item">
+                        <li id="about" class="nav-item  active-nav">
                             <a href="apropos.html" data-value="about-cont">
                             <i class="icon-male-user" hidden></i>
                                 <span class="name-menu">A propos de moi</span>
@@ -95,7 +99,7 @@
                                 <span class="name-menu">Compétences</span>
                             </a>
                         </li>
-                        <li id="work" class="nav-item active-nav">
+                        <li id="work" class="nav-item">
                             <a href="parcours.html" data-value="work-cont">
                             <i class="icon-layers" hidden></i>
                                 <span class="name-menu">Parcours</span>
@@ -135,12 +139,12 @@
         <!-- Start About -->
 		<!-- Start About -->
         <section id="about-cont" class="about home">
-            <div class="title">
-                <h1 class="kaushan">Parcours</h1>
-				<img src="images/diplomes-Manai-Mohamed-Selim.jpg" alt="diplomes Manai Mohamed Selim.jpg" width="450px" height="500px">
-            </div>
+            
             <div class="container">
-                
+                <div class="title">
+                <h1 class="kaushan">A  propos de moi</h1>
+				<img src="images/about-Manai-Mohamed-Selim.jpg" alt="à propos Manai Mohamed Selim" width="450px" height="600px">
+				</div>
                 <div class="row">
                     <div class="col-md-10 col-lg-6">
                         <div class="about-img bg-image"></div> 
@@ -154,7 +158,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link active" id="about-tab" data-toggle="tab" href="#aboutme" role="tab" aria-controls="about" aria-expanded="true">
                                         <i class="icon-male-user"></i>
-                                        <H3>Formations & Diplomes</H3>
+                                        <H3>A  propos de moi</H3>
                                     </a>
                                 </li>
                                 <!-- End About Me Title Tab -->
@@ -162,19 +166,19 @@
                                
                             </ul>
                             <div class="tab-content" id="myTabContent">
-                                <br><br>
-								<div class="tab-pane fade show active text-left" id="aboutme" role="tabpanel" aria-labelledby="about-tab">
-									<p><strong>Ecole supérieur privé d'ingénieurie et de technologie - ESPRIT</strong></p>
-									<p>diplome nationale d'ingénieur en informatique - spécialité Technologie du Web et de l'Internet</p>
-									<p><strong>Institut supérieur d'études technologique de charguia - ISET Charguia</strong></p>
-									<p>Licence en informatique - spécialté développement des système d'informations</p>
-									<p><strong>Lycée el Omrane</strong></p>
-									<p>Baccalauréat Informatique</p>
-									<p><strong>Institut Français de Tunis</strong></p>
-									<p>Diplome d'étude en langue Française - DELF B2</p>     
+                                
+                                <!-- Start About Me Tab -->
+                                <div class="tab-pane fade show active text-left" id="aboutme" role="tabpanel" aria-labelledby="about-tab">
+                                    <p>Je suis Manai Mohamed Selim, titulaire d'un diplome d'ingénieur en Technologie du Web et de l'Internet, je maitrise les diffenrents langages de programmation, je suis spécialisé dans <strong>Symfony</strong>, <strong>JEE</strong>, <strong>Angular 5</strong>.</p>
+                                    <p>Passionné de nouvelles technologies depuis toujours, le métier de développeur web m'est apparu comme une évidence, le codage me passionne également et j'aime apporter mon savoir aux entreprises lorsqu'il est question de se lancer dans de nouveaux projets.</p>
+                                    <img src="images/signature.png" class="img-fluid signature" alt="signature"/>
+									<div class="btn-about">
+                                        <a href="cv.pdf" target="_blank">télécharger mon cv</a>
+                                    </div>
+                                    <!-- Here image Signature -->
                                 </div>
-                               
-                            </div>
+                                <!-- End About Me Tab -->
+                              
                         </div>
                     </div>
                 </div>
@@ -182,31 +186,7 @@
         </section>
         
         <!-- End About -->
-        
-        <!-- Start Header -->
-        
-        <section id="home-cont" class="home1 home">
-            <div class="zoominheader bg-image">
-                <div class="overlay"></div>
-                <div class="zoomoutheader"></div>
-            </div>
-            <div class="title">
-                <h1 class="text-uppercase"><strong>développeur web Full Stack en Tunisie</strong></h1>
-                <p class="type"></p>  <!-- You Can Edit the title on the custom.js File -->
-                <div class="btn-home">
-                    <a href="#work-cont">Portfolio</a>
-                </div>
-            </div>
-        </section>
-        
-        <!-- End Header -->
-        
-        
-        
-        
-        
-    
-        
+		
             <!-- Start Footer -->
             
             <footer>
@@ -235,13 +215,10 @@
         <!-- End Loading -->
         
         
-        <script src="js/jquery-3.1.1.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/typed.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/custom.js"></script>
+        
     </body>
 
 <!-- Mirrored from reva.bouthythemes.com/home-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Nov 2018 22:09:28 GMT -->
 </html>
+
+
